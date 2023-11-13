@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--This is for week 3 of CSC102.
+        We will make an input validation form and a palindrome checker. 
+        Tieraney Stewart
+        TStewart38235@uat.edu
+        October 23, 2023.
+
+        October 30, 2023
+        Setting up page to play audio clip.
+-->
+<html lang="en">
+
+
+<head><!--Opening Head-->
+    <script src="stringcode.js"></script> <!--Linking to stringcode.js-->
+    <link rel="stylesheet" href="strings.css"><!--Linking strings.html to the css meant to go with it-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Page</title><!--Titling the page. This will show on the tab.-->
+</head><!--Closing Head-->
+
+
+<body><!--Opening Body-->
+
+    <header>
+        <h1>Welcome to My Strings.html Page</h1><!--Header for the page. Largest size.-->
+    </header>
+    <nav> <!--Creating Navigation to move between pages-->
+        <h2>
+            Navigation
+        </h2>
+        <a href="./index.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+        <a href="./game.html">Games</a><br>
+        <a href="./strings.html">Strings</a><br>
+    </nav>
+        <h2>Input Validation Section</h2><!--Another header for the page. A size smaller than the first-->
+
+    <div id="loginStatus">Press Submit to Login</div>
+    <!--This will be a place for the system to tell us if the log in is good or bad.-->
+
+    <p>Please submit the following data for Validation.</p><!--Paragraph tag with some text-->
+
+    <form id="creditSubmit" onsubmit="return false">
+        <!--Setting up the form. With the return flase it will return false unless we give it the right information.-->
+        First Name:<br><input type="text" id="fName"><br><br> <!--Setting up the form. Giving first name an id-->
+        Last Name:<br><input type="text" id="lName"><br><br><!--Setting up the form. Giving last name an id-->
+        Zip Code:<br><input type="text" id="zipCode"><br><!--Setting up the form. Giving zipcode an id-->
+        <br>
+
+        <input type="submit"
+            onclick="checkCreds();"><!--Creating a button to tell it to submit the input information.-->
+
+    </form><!--Closing for the form-->
+    <br>
+    <br>
+
+    <h2>Palindrome Checker</h2>
+    <br>
+    <div id="palinStatus">Palindrome Status</div>
+    <br>
+    <form id="palinSubmit" onsubmit="return false">
+        Enter Possible Palindrome: <input type="text" id="palinInput"><br>
+        <br>
+        <input type="Submit" onclick="checkPalin();">
+    </form>
+    <br>
+    <br>
+    
+
+    <!--Section to play audio-->
+    <h2>
+        Play Audio <!--h2 to introduce the new section of the page-->
+    </h2>
+
+
+    <button class="largeButton" onclick="playLoz();"><!--Creating and setting up a button. Giving it a class-->
+        Press for Treasure
+    </button>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <footer><!--footer for the page-->
+        Tieraney Stewart<br> 
+        0123 Someplace Somewhere On a Road,<br>
+        In a Town, In a State 54321<br>
+        (000) 111-2222<br>
+    </footer>
+
+</body><!--Closing Body-->
+
+
+</html>

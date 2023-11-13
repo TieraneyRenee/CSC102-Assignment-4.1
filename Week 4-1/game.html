@@ -1,0 +1,74 @@
+<!DOCTYPE html><!--Doctype, telling the browser what document type to expect-->
+<html lang="en"><!--Telling what language-->
+<!--Tieraney
+        TStewart38235@uat.edu
+        10/16/2023
+        This is my assignment for week 2-1 The Building Blocks for Javascript-Functions.
+    -->
+
+
+<head><!--Opening head tag. Information in the head tags is going to tell information. Such as title, scripts, and style sheets-->
+    <script src="gamecode.js"></script><!--Linking my js file to my html-->
+    <link rel="stylesheet" href="games.css"><!--Linking game.html to the css meant to go with it-->
+    <meta charset="UTF-8"><!--Specifies the character encoding for the HTML document. HTML5 specification encourages web developers to use the UTF-8 character set, since it covers almost all characters and symbols in the world. (W3schools)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Page</title><!--Setting the title for the page-->
+</head><!--Closing head tag.-->
+
+
+<body><!--Opening body tag-->
+
+    <header>
+        <h1>Welcome to my Games Page!</h1><!--Largest size header to be a header for the page.-->
+    </header>
+    <h2>Come play craps with the Dung Beetles!</h2><!--A header one size smaller to act like a subtitle for the page.-->
+
+    <h3>
+        Navigation
+    </h3>
+    
+    <nav>
+        <a href="./index.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+        <a href="./game.html">Games</a><br>
+        <a href="./strings.html">Strings</a><br>
+     </nav>
+
+
+    <p><!--Opening paragraph tag-->
+        <div id="rolling"><!--Giving an id to the image so that I can apply CSS to it-->
+            <img src="giphy.gif"><!--Inserting an image-->
+        </div> <!--Closing div tag-->
+    </p><!--Closing paragraph tag-->
+
+
+    <br><br><!--Breaks to add spacings-->
+
+    <div id="text"><!--Set an id for the text so that I could customize it with CSS-->
+        Die 1 results: <div id="die1Result">Press 'Roll the Dice!' to play craps game</div>
+        <br><!--Setting the id for the results of die 1 and setting up a space for it to be displayed-->
+        Die 2 results: <div id="die2Result">Press 'Roll the Dice!' to play craps game</div>
+        <br><!--Setting the id for the results of die 2 and setting up a space for it to be displayed-->
+        Sum result: <div id="sumResults">Press 'Roll the Dice!' to play craps game</div>
+        <br><!--Setting the id for the results of the sum of die 1 and die 2 and setting up a space for it to be displayed-->
+        Game result: <div id="gameResults">Press 'Roll the Dice!' to play craps game</div>
+        <br><!--Setting the id for the results of the game and setting up a place for it to be displayed-->
+    </div><!--Closing tag for the div-->
+
+
+    <div id="button"><!--Set an id for the button so that I could customize it with CSS-->
+        <button onclick="playCraps();">Roll the Dice!</button><br><!--A button to click to set everything into motion-->
+    </div><!--Closing tag for the div-->
+
+
+    <footer>
+        Tieraney Stewart<br> 
+        0123 Someplace Somewhere On a Road,<br>
+        In a Town, In a State 54321<br>
+        (000) 111-2222<br>
+    </footer>
+
+</body><!--Closing body tag-->
+
+
+</html><!--Closing html tag-->

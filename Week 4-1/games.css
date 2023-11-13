@@ -1,0 +1,51 @@
+body {
+    background-color: #F4cf4e;
+    /*setting the background color*/
+}
+
+
+#rolling {
+    text-align: center;
+    /*centering the art on the page*/
+}
+
+h1 {
+    color: #4b4771;
+    text-align: center;
+    /*Set color of h1*/
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    /*Set color of h2*/
+}
+
+#text {
+    color: #4b4771;
+    text-align: center;
+    /*Set the color of the text and centered it*/
+
+}
+
+#button {
+    text-align: center;
+    /*Centered the button*/
+}
+
+nav{
+    height: 6000px;
+    width: 200px ;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+} 
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+header{
+    text-align: center;
+}
